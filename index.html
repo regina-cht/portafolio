@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/Icono Logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sobre_mi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nop8okg.css">
+    <script defer src="main.js"></script>
+
+    <title>Regina Chavarín | Portafolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-box">
+            <a href="index.html" class="botones_menu">Sobre mí</a>
+            <a href="design.html" class="botones_menu">Diseño</a>
+            <a href="ilustracion.html" class="botones_menu">Ilustración</a>
+        </nav>
+        <div class="header-box">
+            <a href="index.html">
+                <img class="header-logo" onmouseover="this.src='images/SVG/Icono Logo hover.svg'"
+                    onmouseout="this.src='images/SVG/Icono Logo.svg'" src="images/SVG/Icono Logo.svg"
+                    alt="Regresar a inicio">
+            </a>
+        </div>
+        <nav class="header-box">
+            <a href="contacto.html" class="botones_menu boton_contacto">Contacto</a>
+        </nav>
+        <div role="banner" class="banner">
+            <div class="banner-box"></div>
+            <div class="banner-box"><a href="index.html">
+                    <img class="header-logo" onmouseover="this.src='images/SVG/Icono Logo hover.svg'"
+                        onmouseout="this.src='images/SVG/Icono Logo.svg'" src="images/SVG/Icono Logo.svg"
+                        alt="Regresar a inicio">
+                </a>
+            </div>
+            <div class="banner-box"><a onclick="toggleMobileMenu()" class="menu" href="#">
+                    <img class="menu-icono" src="images/SVG/Icono menu.svg" alt="Menú">
+                </a></div>
+        </div>
+        <div id="mobile-menu" class="overlay">
+            <a onclick="toggleMobileMenu()" href="" class="cerrar">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html" class="botones_menu">Sobre mí</a>
+                <a href="design.html" class="botones_menu">Diseño</a>
+                <a href="ilustracion.html" class="botones_menu">Ilustración</a>
+                <a href="contacto.html" class="botones_menu boton_contacto">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="inicio" aria-label="Pantalla de inicio">
+        <img class="autoretrato" src="images/SVG/Ilustración autoretrato.svg" alt="Autoretrato">
+        <h1 class="title">¡Hola, soy <span class="red-bold">Regina</span>!</h1>
+        <h2 class="subtitulo">Diseñadora gráfica e ilustradora</h2>
+        <a href="#sobre_mi"> <img class="header-logo" onmouseover="this.src='images/SVG/Icono down arrow hover.svg'"
+                onmouseout="this.src='images/SVG/Icono down arrow.svg'" src="images/SVG/Icono down arrow.svg"
+                alt="Desplazarse a siguiente sección"></a>
+    </section>
+
+    <div class="contenedor">
+        <section id="sobre_mi" class="sobre_mi contenido" aria-label="Sobre mí">
+            <h2 class="title2">Sobre Mí</h2>
+            <h3 class="subtitulo2">Es un gusto conocerte</h3>
+
+            <p class="parrafo">Soy egresada de la <span class="p_bold">Licenciatura de Diseño para la Comunicación
+                    Gráfica</span> de la Universidad&nbsp;de&nbsp;Guadalajara.<br><br>
+
+                Me encanta conocer el mundo y entenderlo desde diversas perspectivas, así como aprender cosas
+                nuevas. Siempre estoy buscando la manera de mejorar o adquirir nuevas&nbsp;habilidades.<br><br>
+
+                Toda mi vida he tenido pasión por lo creativo y la cultura, cosas que me impulsaron a estudiar mi
+                carrera. Esto junto con toda mi formación personal/laboral logra reflejarse en mis diseños,
+                permitiéndome resolver los problemas de forma integral y crecer con&nbsp;cada&nbsp;proyecto.<br><br>
+
+                <span class="p_bold">¡Me encantaría trabajar contigo!</span>
+            </p>
+    </div>
+    </div>
+    <a class="irarriba" href="#top"><img class="flecha" src="images/SVG/arrow_upward.svg" alt=""></a>
+</body>
+
+</html>

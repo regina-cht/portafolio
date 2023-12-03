@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/Icono Logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nop8okg.css">
+    <script defer src="main.js"></script>
+
+    <title>Regina Chavarín | Portafolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-box">
+            <a href="index.html" class="botones_menu">Sobre mí</a>
+            <a href="design.html" class="botones_menu">Diseño</a>
+            <a href="ilustracion.html" class="botones_menu">Ilustración</a>
+        </nav>
+        <div class="header-box">
+            <a href="index.html">
+                <img class="header-logo" onmouseover="this.src='images/SVG/Icono Logo hover.svg'"
+                    onmouseout="this.src='images/SVG/Icono Logo.svg'" src="images/SVG/Icono Logo.svg"
+                    alt="Regresar a inicio">
+            </a>
+        </div>
+        <nav class="header-box">
+            <a href="contacto.html" class="botones_menu boton_contacto">Contacto</a>
+        </nav>
+        <div role="banner" class="banner">
+            <div class="banner-box"></div>
+            <div class="banner-box"><a href="index.html">
+                    <img class="header-logo" onmouseover="this.src='images/SVG/Icono Logo hover.svg'"
+                        onmouseout="this.src='images/SVG/Icono Logo.svg'" src="images/SVG/Icono Logo.svg"
+                        alt="Regresar a inicio">
+                </a>
+            </div>
+            <div class="banner-box"><a onclick="toggleMobileMenu()" class="menu" href="#">
+                    <img class="menu-icono" src="images/SVG/Icono menu.svg" alt="Menú">
+                </a></div>
+        </div>
+        <div id="mobile-menu" class="overlay">
+            <a onclick="toggleMobileMenu()" href="" class="cerrar">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html" class="botones_menu">Sobre mí</a>
+                <a href="design.html" class="botones_menu">Diseño</a>
+                <a href="ilustracion.html" class="botones_menu">Ilustración</a>
+                <a href="contacto.html" class="botones_menu boton_contacto">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="contacto">
+        <h1 class="title">Contáctame</h1>
+        <div class="parrafo">
+            <p>Para más información o cotizaciones sobre mi trabajo envía un mensaje
+                a&nbsp;mi&nbsp;correo&nbsp;o&nbsp;<span class="boton-form whatsapp"><a target="_blank"
+                        href="https://wa.me/3317730370">Whatsapp</a></span>
+            </p>
+        </div>
+        <form target="_blank" action="https://formsubmit.co/chavarin.design@gmail.com" method="POST" class="container">
+            <div class="box">
+                <div class="name">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Jonh Doe" name="name" required>
+                </div>
+                <div class="asunto">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" placeholder="Mi asunto" name="asunto" required>
+                </div>
+                <div class="email">
+                    <label for="email">Correo</label>
+                    <input type="text" placeholder="correo@correo.com" name="email" required>
+                </div>
+                <div class="message-box">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"
+                        required></textarea>
+                </div>
+                <div class="button">
+                    <button id="send" onclick="message()">Enviar</button>
+                </div>
+            </div>
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse"
+                value=" ¡Gracias por ponerte en contacto conmigo! Estoy revisando tu mensaje y te responderé lo antes posible.">
+        </form>
+        <div class="message">
+            <div class="success" id="success">¡Gracias! Tu mensaje se ha enviado correctamente.</div>
+            <div class="danger" id="danger">¡Ups! Parece que algunos campos están vacíos. Por favor, completa
+                todos&nbsp;los&nbsp;campos&nbsp;obligatorios.</div>
+        </div>
+        <a class="irarriba" href="#top"><img class="flecha" src="images/SVG/arrow_upward.svg" alt=""></a>
+</body>
+</main>
+</body>
+</html>
