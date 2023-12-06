@@ -4,9 +4,13 @@
   display: grid;
   grid-template-columns: repeat(3, 320px);
   grid-template-rows: repeat(3, auto);
-  gap: 0px;
+  gap: 5px;
   justify-content: center;
   align-items: center;
+}
+main a {
+  height: 250px;
+  width: 320px;
 }
 .galeria {
   object-fit: cover;
@@ -28,8 +32,12 @@
 @media (min-width: 601px) and (max-width: 900px) {
   .contenedor {
     grid-template-columns: repeat(2, 280px);
-    grid-template-rows: repeat(5, auto);
-    gap: 0px;
+    grid-template-rows: repeat(5, 230);
+    gap: 5px;
+  }
+  main a {
+    height: 230px;
+    width: 280px;
   }
   .galeria {
     height: 230px;
@@ -41,7 +49,11 @@
   .contenedor {
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(5, auto);
-    gap: 0px;
+    gap: 5px;
+  }
+  main a {
+    height: 230px;
+    width: 280px;
   }
   .galeria {
     height: 230px;

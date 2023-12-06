@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(2, 600px);
   grid-template-rows: repeat(3, auto);
-  gap: 0px;
+  gap: 5px;
   justify-content: center;
   align-items: center;
 }
@@ -17,14 +17,21 @@
 .galeria:hover {
   filter: grayscale(100%);
 }
-
+main a {
+  height: 350px;
+  width: 600px;
+}
 @media screen and (max-width: 900px) {
   .contenedor {
     grid-template-columns: repeat(1, 400px);
     grid-template-rows: repeat(5, auto);
-    gap: 0px;
+    gap: 5px;
   }
   .galeria {
+    height: 230px;
+    width: 400px;
+  }
+  main a {
     height: 230px;
     width: 400px;
   }
@@ -34,7 +41,11 @@
   .contenedor {
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(3, auto);
-    gap: 0px;
+    gap: 5px;
+  }
+  main a {
+    height: 230px;
+    width: 400px;
   }
   .galeria {
     height: 230px;
