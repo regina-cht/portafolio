@@ -47,7 +47,7 @@
 .subtitulo {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 600;
   font-style: italic;
   text-transform: uppercase;
@@ -59,7 +59,7 @@
 .nota {
   padding: 10px;
   font-size: 0.6rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 @media (min-width: 900px) and (max-width: 1199px) {
   .contenedor {
@@ -133,6 +133,6 @@
     font-size: 1rem;
   }
   .subtitulo {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
