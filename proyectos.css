@@ -59,6 +59,7 @@
 .nota {
   padding: 10px;
   font-size: 0.6rem;
+  margin-bottom: 20px;
 }
 @media (min-width: 900px) and (max-width: 1199px) {
   .contenedor {
