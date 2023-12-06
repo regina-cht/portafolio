@@ -35,7 +35,7 @@
 }
 .galeria {
   width: 600px;
-  background-color: green;
+  background-color: gray;
   height: 600px;
 }
 
@@ -56,11 +56,15 @@
   font-weight: 600;
   text-align: left;
 }
+.nota {
+  padding: 10px;
+  font-size: 0.6rem;
+}
 @media (min-width: 900px) and (max-width: 1199px) {
   .contenedor {
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(5, auto);
-    gap: 0px;
+    gap: 5px;
   }
   .portada {
     object-fit: cover;
@@ -84,7 +88,7 @@
   .contenedor {
     grid-template-columns: repeat(1, 400px);
     grid-template-rows: repeat(5, auto);
-    gap: 0px;
+    gap: 5px;
   }
   .portada {
     object-fit: cover;
@@ -108,7 +112,7 @@
   .contenedor {
     grid-template-columns: repeat(1, 250px);
     grid-template-rows: repeat(5, auto);
-    gap: 0px;
+    gap: 5px;
   }
   .portada {
     object-fit: cover;
@@ -120,7 +124,7 @@
     width: 250px;
   }
   .descripcion-wrap {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     width: 250px;
     height: 450px;
   }
