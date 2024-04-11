@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/Icono Logo.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sobre_mi.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobre_mi.css">
     <link rel="stylesheet" href="https://use.typekit.net/nop8okg.css">
-    <script defer src="main.js"></script>
+    <script defer src="js/main.js"></script>
 
     <title>Regina Chavarín | Portafolio</title>
 </head>
@@ -57,8 +57,10 @@
 
     <section class="inicio" aria-label="Pantalla de inicio">
         <img class="autoretrato" src="images/SVG/Ilustración autoretrato.svg" alt="Autoretrato">
-        <h1 class="title">¡Hola, soy <span class="red-bold">Regina</span>!</h1>
-        <h2 class="subtitulo">Diseñadora gráfica e ilustradora</h2>
+        <h1 id=" mainTitle" class="title title_1" data-texto="¡Hola, soy Regina!">¡Hola, soy <span
+                class="typed red-bold">Regina</span>!</h1>
+        <h2 class="subtitulo title_2"><span class="typed2"></span>
+        </h2>
         <a href="#sobre_mi"> <img class="header-logo" onmouseover="this.src='images/SVG/Icono down arrow hover.svg'"
                 onmouseout="this.src='images/SVG/Icono down arrow.svg'" src="images/SVG/Icono down arrow.svg"
                 alt="Desplazarse a siguiente sección"></a>
@@ -78,12 +80,28 @@
                 Toda mi vida he tenido pasión por lo creativo y la cultura, cosas que me impulsaron a estudiar mi
                 carrera. Esto junto con toda mi formación personal/laboral logra reflejarse en mis diseños,
                 permitiéndome resolver los problemas de forma integral y crecer con&nbsp;cada&nbsp;proyecto.<br><br>
-
-                <span class="p_bold">¡Me encantaría trabajar contigo!</span>
             </p>
+        </section>
     </div>
     </div>
     <a class="irarriba" href="#top"><img class="flecha" src="images/SVG/arrow_upward.svg" alt=""></a>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('.typed', {
+            strings: ['Diseñadora Gráfica', 'Frontend Developer', 'Regina'],
+            typeSpeed: 60,
+            showCursor: false,
+        });
+        var typed2 = new Typed('.typed2', {
+            strings: ['^5000\n', '¡Me encantaría trabajar contigo!'],
+            typeSpeed: 50,
+            showCursor: false,
+        });
+
+        setTimeout(typed2, 2000);
+
+    </script>
 </body>
 
 </html>

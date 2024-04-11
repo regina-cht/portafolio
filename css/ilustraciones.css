@@ -1,0 +1,54 @@
+.contenedor {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(3, auto);
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.galeria {
+  object-fit: cover;
+  height: 350px;
+  width: 600px;
+  background-color: gray;
+}
+.galeria:hover {
+  filter: grayscale(100%);
+}
+main a {
+  height: 350px;
+  width: 600px;
+}
+@media screen and (max-width: 900px) {
+  .contenedor {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(5, auto);
+    gap: 5px;
+  }
+  .galeria {
+    height: 230px;
+    width: 400px;
+  }
+  main a {
+    height: 230px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1198px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+  }
+  main a {
+    height: 230px;
+    width: 400px;
+  }
+  .galeria {
+    height: 230px;
+    width: 400px;
+  }
+}

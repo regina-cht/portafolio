@@ -1,0 +1,129 @@
+@import url('style.css');
+
+:root {
+  --oscuro: #1a1a1a;
+  --blanco: #ffffff;
+  --gris-claro: #eeeeee;
+  --rojo: #c60f01;
+  --azul: #3c61aa;
+  --verde: #155942;
+  --azul-claro: #8da6d7;
+}
+/*Inicio*/
+.inicio {
+  margin-top: 10vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.autoretrato {
+  display: block;
+  height: 45vh;
+}
+.title,
+.red-bold {
+  margin-top: 2rem;
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+.red-bold {
+  color: var(--rojo);
+}
+.subtitulo {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--azul);
+}
+
+/**/
+/*Sobre mi*/
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--oscuro);
+}
+
+.contenido {
+  padding: 30px;
+  max-width: 1000px;
+}
+.sobre_mi {
+  max-width: 550px;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--gris-claro);
+  display: inherit;
+  flex-direction: column;
+  color: var(--oscuro);
+}
+.sobre_mi .title2 {
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+.sobre_mi .subtitulo2 {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--rojo);
+  margin-bottom: 20px;
+}
+.sobre_mi .parrafo {
+  text-align: left;
+}
+.p_bold {
+  font-weight: 700;
+  color: var(--azul);
+}
+/**/
+
+@media screen and (max-width: 600px) {
+  .inicio {
+    margin-top: 10vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title,
+  .red-bold {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+  }
+  .subtitulo {
+    font-size: 1rem;
+  }
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: var(--oscuro);
+  }
+  .sobre_mi {
+    display: inherit;
+    flex-direction: column;
+  }
+  .sobre_mi .title2 {
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+  .sobre_mi .subtitulo2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .sobre_mi .parrafo {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+  .p_bold {
+    font-weight: 700;
+  }
+}
