@@ -82,8 +82,7 @@
   color: var(--azul);
 }
 /**/
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .inicio {
     margin-top: 10vh;
     height: 100vh;
@@ -95,10 +94,10 @@
   .title,
   .red-bold {
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
   .subtitulo {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .contenedor {
     display: flex;
@@ -125,5 +124,34 @@
   }
   .p_bold {
     font-weight: 700;
+  }
+}
+@media (min-width: 400px) {
+  .title,
+  .red-bold {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .subtitulo {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .title,
+  .red-bold {
+    margin-top: 2rem;
+    font-weight: 900;
+    font-size: 2.3rem;
+  }
+  .red-bold {
+    color: var(--rojo);
+  }
+  .subtitulo {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--azul);
   }
 }
