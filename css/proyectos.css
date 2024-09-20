@@ -59,8 +59,8 @@
   text-align: left;
 }
 .nota {
-  padding: 10px;
-  font-size: 0.6rem;
+  padding: 15px;
+  font-size: 0.7rem;
   margin-bottom: 10px;
 }
 @media (min-width: 900px) and (max-width: 1199px) {
