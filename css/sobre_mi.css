@@ -171,9 +171,12 @@
   .subtitulo {
     font-size: 1rem;
   }
+  .sobre_mi .title2 {
+    font-size: 1.5rem;
+  }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .title,
   .red-bold {
     margin-top: 2rem;
