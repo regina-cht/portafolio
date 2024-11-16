@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/Icono Logo.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobre_mi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nop8okg.css">
+    <script defer src="js/main.js"></script>
+    <title>Regina Chavarín | Portafolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-box">
+            <a href="index.html" class="botones_menu">Sobre mí</a>
+            <a href="design.html" class="botones_menu">Diseño</a>
+            <a href="ilustracion.html" class="botones_menu">Ilustración</a>
+        </nav>
+        <div class="header-box">
+            <a href="index.html">
+                <img class="header-logo" onmouseover="this.src='images/SVG/Icono Logo hover.svg'"
+                    onmouseout="this.src='images/SVG/Icono Logo.svg'" src="images/SVG/Icono Logo.svg"
+                    alt="Regresar a inicio">
+            </a>
+        </div>
+        <nav class="header-box">
+            <a href="contacto.html" class="botones_menu boton_contacto">Contacto</a>
+        </nav>
+        <div role="banner" class="banner">
+            <div class="banner-box"></div>
+            <div class="banner-box"><a href="index.html">
+                    <img class="header-logo" onmouseover="this.src='images/SVG/Icono Logo hover.svg'"
+                        onmouseout="this.src='images/SVG/Icono Logo.svg'" src="images/SVG/Icono Logo.svg"
+                        alt="Regresar a inicio">
+                </a>
+            </div>
+            <div class="banner-box"><a onclick="toggleMobileMenu()" class="menu" href="#">
+                    <img class="menu-icono" src="images/SVG/Icono menu.svg" alt="Menú">
+                </a></div>
+        </div>
+        <div id="mobile-menu" class="overlay">
+            <a onclick="toggleMobileMenu()" href="" class="cerrar">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html" class="botones_menu">Sobre mí</a>
+                <a href="design.html" class="botones_menu">Diseño</a>
+                <a href="ilustracion.html" class="botones_menu">Ilustración</a>
+                <a href="contacto.html" class="botones_menu boton_contacto">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="inicio" aria-label="Pantalla de inicio">
+        <img class="autoretrato" src="images/SVG/Ilustración autoretrato.svg" alt="Autoretrato">
+        <h1 id=" mainTitle" class="title title_1" data-texto="¡Hola, soy Regina!">¡Hola, soy<br><span
+                class="typed red-bold">Regina</span>!</h1>
+        <h2 class="subtitulo title_2"><span class="typed2"></span>
+        </h2>
+        <a href="#sobre_mi"> <img class="header-logo" onmouseover="this.src='images/SVG/Icono down arrow hover.svg'"
+                onmouseout="this.src='images/SVG/Icono down arrow.svg'" src="images/SVG/Icono down arrow.svg"
+                alt="Desplazarse a siguiente sección"></a>
+    </section>
+
+    <div class="contenedor">
+        <section id="sobre_mi" class="sobre_mi contenido" aria-label="Sobre mí">
+            <h2 class="title2">Es un gusto conocerte</h2>
+            <p class="highlight_p">
+                Mi pasión por lo creativo y la cultura me ha impulsado a lo largo de mi carrera, permitiéndome
+                abordar
+                cada reto de manera integral y crecer con&nbsp;cada&nbsp;proyecto.
+            </p>
+            <h3 class="subtitulo2">(SOBRE MÍ)</h3>
+            <p class="parrafo">Soy egresada de la <span class="p_bold">Licenciatura de Diseño para la Comunicación
+                    Gráfica</span> de la Universidad&nbsp;de&nbsp;Guadalajara.<br><br>
+                Me encanta conocer el mundo y entenderlo desde diversas perspectivas, así como aprender cosas
+                nuevas. Siempre estoy buscando la manera de mejorar o adquirir nuevas&nbsp;habilidades.<br><br>
+
+
+                Trabajo en cada proyecto desde la idea inicial hasta su implementación
+                final, asegurándome de que el resultado no solo resuelva problemas, sino que también deje una
+                experiencia positiva y duradera en los usuarios.<br><br>
+                Además,
+                cuando no estoy trabajando en diseño, disfruto de actividades que me inspiran, como dibujar,
+                cantar o aprender algo nuevo.<br><br>
+            </p>
+            <div class="sobremi-links">
+                <div class="sobre_mi_link_individual">
+                    <img class="linkArrow" src="images/arrow.svg" alt="">
+                    <a class="redirection-link" href="design.html">IR A
+                        PROYECTOS DE DISEÑO</a>
+                </div>
+                <div class="sobre_mi_link_individual">
+                    <img class="linkArrow" src="images/arrow.svg" alt="">
+                    <a class="redirection-link" href="ilustracion.html">IR A PROYECTOS DE
+                        ILUSTRACIÓN</a>
+                </div>
+
+        </section>
+    </div>
+    </div>
+    <a class="irarriba" href="#top"><img class="flecha" src="images/SVG/arrow_upward.svg" alt=""></a>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('.typed', {
+            strings: ['Diseñadora Gráfica', 'Frontend Developer', 'Regina'],
+            typeSpeed: 60,
+            showCursor: false,
+        });
+        var typed2 = new Typed('.typed2', {
+            strings: ['^5000\n', '¡Me encantaría trabajar contigo!'],
+            typeSpeed: 50,
+            showCursor: false,
+        });
+
+        setTimeout(typed2, 2000);
+
+    </script>
+</body>
+
+</html>

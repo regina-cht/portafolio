@@ -1,0 +1,49 @@
+@import url('style.css');
+
+:root {
+  --oscuro: #0d0d0c;
+  --blanco: #ffffff;
+  --gris-claro: #eeeeee;
+  --crema: #cbcbc2;
+  --rojo: #c60f01;
+  --azul: #3c61aa;
+  --verde: #155942;
+  --azul-claro: #8da6d7;
+}
+/*Inicio*/
+
+.iconolanding {
+  display: block;
+  height: 20%;
+}
+
+.redirect_button {
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--rojo);
+  color: var(--blanco);
+  text-decoration: none;
+}
+.redirect_button:hover {
+  background-color: var(--azul);
+}
+.despedida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.despedida_parrafo {
+  margin-top: 15px;
+  text-align: center;
+}
+.bold {
+  font-weight: 600;
+  color: #474747;
+}
